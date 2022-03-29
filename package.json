@@ -22,6 +22,7 @@
     "react-native-onesignal": "^4.3.7",
     "react-native-pager-view": "^5.4.15",
     "react-native-paper": "^4.11.2",
+    "react-native-rename": "^2.9.0",
     "react-native-responsive-fontsize": "^0.5.1",
     "react-native-responsive-screen": "^1.4.2",
     "react-native-root-tips": "^1.1.2",
