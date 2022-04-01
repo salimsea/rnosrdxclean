@@ -2,6 +2,7 @@ import {StyleSheet, Text, View, Button} from 'react-native';
 import React from 'react';
 import {fonts} from '../../utils';
 import {TouchableRipple} from 'react-native-paper';
+import {ILSplash} from '../../assets';
 
 const Home = ({navigation}) => {
   return (
@@ -12,6 +13,7 @@ const Home = ({navigation}) => {
       <TouchableRipple onPress={() => navigation.navigate('User')}>
         <Text style={{fontSize: 13}}>navigate</Text>
       </TouchableRipple>
+      <ILSplash width={100} />
     </View>
   );
 };
