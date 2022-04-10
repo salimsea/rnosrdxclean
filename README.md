@@ -6,12 +6,14 @@
 Boiler Template React Native, Onesignal, Redux, React Navigation
 
 ## New Update
-Custome Fonts Android & IOS
+- Fonts For Android & IOS 
+- Sound Notification For Android 
+- Change Splash Screen For Android & IOS 
 
 ## Version
-➡️ RN : 0.67 <br />
-➡️ React Navigation : 6.0.8 <br />
-➡️ OneSignal : 4.3.7
+- RN : 0.67
+- React Navigation : 6.0.8
+- OneSignal : 4.3.7
 
 ## Run the script if you change the package name
 ```
