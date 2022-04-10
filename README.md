@@ -2,6 +2,9 @@
 
 ![image](https://user-images.githubusercontent.com/49223890/160132104-d0de5217-40a8-406d-b9a9-cd1232224f71.png)
 
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsalimsea%2Frnosrdxclean&count_bg=%2379C83D&title_bg=%234D4D4D&icon=react.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 ## What is this
 Boiler Template React Native, Onesignal, Redux, React Navigation
 
