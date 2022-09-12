@@ -4,15 +4,18 @@
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsalimsea%2Frnosrdxclean&count_bg=%2379C83D&title_bg=%234D4D4D&icon=react.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-## Updated 29 Aug 2022
+## Last Updated
 
-- Changed API Level 31 (support upload google playstore )
+- Updated 12 Sep 2022
+  -- add react-native-vector-icons
+- Updated 29 Aug 2022
+  -- Changed API Level 31 (support upload google playstore )
 
 ## What is this
 
 Boiler Template React Native, Onesignal, Redux, React Navigation
 
-## New Update
+## History Updated
 
 - Fonts For Android & IOS
 - Sound Notification For Android
