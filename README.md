@@ -6,6 +6,8 @@
 
 ## Last Updated
 
+- Updated 21 Oct 2022
+  -- add react-native-code-push (easy update app in production 🔥)
 - Updated 12 Sep 2022
   -- add react-native-vector-icons
 - Updated 29 Aug 2022
