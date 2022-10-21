@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "CodePush:production": "appcenter CodePush release-react -a salimsea/rnosrdxclean -d Production",
+    "CodePush:staging": "appcenter CodePush release-react -a salimsea/rnosrdxclean -d Staging"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.2.0",
@@ -18,10 +20,12 @@
     "axios": "^0.26.1",
     "react": "17.0.2",
     "react-native": "0.67.4",
+    "react-native-code-push": "^7.0.5",
     "react-native-gesture-handler": "^2.3.2",
     "react-native-onesignal": "^4.3.7",
     "react-native-pager-view": "^5.4.15",
     "react-native-paper": "^4.11.2",
+    "react-native-reanimated": "^2.11.0",
     "react-native-rename": "^2.9.0",
     "react-native-responsive-fontsize": "^0.5.1",
     "react-native-responsive-screen": "^1.4.2",

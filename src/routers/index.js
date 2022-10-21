@@ -4,7 +4,7 @@ import {
   createStackNavigator,
 } from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Home, Intro, User} from '../pages';
+import {Home, Intro, User, UpdateApp} from '../pages';
 import {BottomNavigator} from '../components';
 
 const Stack = createStackNavigator();
@@ -49,6 +49,7 @@ const Routers = () => {
       <Stack.Screen name="Intro" component={Intro} />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="User" component={User} />
+      <Stack.Screen name="UpdateApp" component={UpdateApp} />
     </Stack.Navigator>
   );
 };

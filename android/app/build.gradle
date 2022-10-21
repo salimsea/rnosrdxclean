@@ -2,6 +2,7 @@ apply plugin: "com.android.application"
 apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 apply plugin: 'com.google.gms.google-services'
 
+
 import com.android.build.OutputFile
 
 /**
@@ -84,6 +85,7 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -136,8 +138,8 @@ android {
         applicationId "com.rnosrdxclean"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
     }
     splits {
         abi {
@@ -163,6 +165,11 @@ android {
                     abiFilters nativeArchitectures.split(',')
                 }
             }
+            resValue "string", "CodePushDeploymentKey", '"K7czk5oXQezL0aIVebVvAyIBJzGBL2N281Wii"'
+        }
+        releaseStaging {
+            resValue "string", "CodePushDeploymentKey", '"K7czk5oXQezL0aIVebVvAyIBJzGBL2N281Wii"'
+            matchingFallbacks = ['release']
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
@@ -170,6 +177,7 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            resValue "string", "CodePushDeploymentKey", '"jInlMbKTrepbQKeVbmkbksCvBSlnTty4Voo8j"'
         }
     }
 

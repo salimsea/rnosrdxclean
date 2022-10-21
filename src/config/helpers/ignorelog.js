@@ -5,5 +5,7 @@ export default IgnoreLog = () => {
     'Require cycle: node_modules/rn-fetch-blob/index.js',
     'Require cycle: node_modules/react-native/Libraries/Network/fetch.js',
     "[react-native-gesture-handler] Seems like you're using an old API with gesture components, check out new Gestures system!",
+    '`new NativeEventEmitter()` was called with a non-null argument without the required `addListener` method.',
+    '`new NativeEventEmitter()` was called with a non-null argument without the required `removeListeners` method.',
   ]);
 };

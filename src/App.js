@@ -5,10 +5,18 @@ import {Provider} from 'react-redux';
 import {navigationRef, OneSignalInit, store} from './config';
 import {NavigationContainer} from '@react-navigation/native';
 import Routers from './routers';
+import CodePush from 'react-native-code-push';
 
 OneSignalInit();
 IgnoreLog();
-
+let CodePushOptions = {
+  checkFrequency: CodePush.CheckFrequency.MANUAL,
+  installMode: CodePush.InstallMode.ON_NEXT_RESUME,
+  // updateDialog: {
+  //   appendReleaseDescription: true,
+  //   title: 'a new update is available!',
+  // },
+};
 const App = () => {
   useEffect(() => {
     async function fetchData() {
@@ -28,4 +36,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default CodePush(CodePushOptions)(App);
