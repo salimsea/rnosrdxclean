@@ -12,10 +12,6 @@ IgnoreLog();
 let CodePushOptions = {
   checkFrequency: CodePush.CheckFrequency.MANUAL,
   installMode: CodePush.InstallMode.ON_NEXT_RESUME,
-  // updateDialog: {
-  //   appendReleaseDescription: true,
-  //   title: 'a new update is available!',
-  // },
 };
 const App = () => {
   useEffect(() => {

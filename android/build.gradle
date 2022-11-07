@@ -7,6 +7,7 @@ buildscript {
         compileSdkVersion = 31
         targetSdkVersion = 31
         ndkVersion = "22.1.7171670"
+        kotlinVersion = "1.5.31" 
     }
     repositories {
         gradlePluginPortal()
