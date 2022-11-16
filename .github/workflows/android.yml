@@ -3,7 +3,7 @@ name: Android
 on: [pull_request]
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -12,8 +12,8 @@ jobs:
         with:
           node-version: 12.x
 
-      - names: Cache npm dependencies
-        users: actions/cache@v2
+      - name: Cache npm dependencies
+        uses: actions/cache@v2
         with:
           path: '~/.npm'
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
