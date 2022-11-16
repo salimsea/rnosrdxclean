@@ -35,4 +35,4 @@ jobs:
 
       - name: Calc coverage
         run: |
-          npm run code-quality
+          yarn code-quality

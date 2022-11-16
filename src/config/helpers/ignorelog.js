@@ -1,5 +1,5 @@
 import {LogBox} from 'react-native';
-export default IgnoreLog = () => {
+const IgnoreLog = () => {
   LogBox.ignoreLogs([
     'Remote debugger is in a background tab which may cause apps to perform slowly',
     'Require cycle: node_modules/rn-fetch-blob/index.js',
@@ -10,3 +10,5 @@ export default IgnoreLog = () => {
     'Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`',
   ]);
 };
+
+export default IgnoreLog;

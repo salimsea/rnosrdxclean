@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "code-quality": "npm run lint && npm run test",
+    "code-quality": "yarn lint",
     "CodePush:production": "appcenter CodePush release-react -a salimsea/rnosrdxclean -d Production",
     "CodePush:staging": "appcenter CodePush release-react -a salimsea/rnosrdxclean -d Staging"
   },

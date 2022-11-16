@@ -1,6 +1,6 @@
 import OneSignal from 'react-native-onesignal';
 
-export default OneSignalInit = () => {
+const OneSignalInit = () => {
   //OneSignal Init Code
   OneSignal.setLogLevel(6, 0);
   OneSignal.setAppId('2ba24636-6bd2-4e0d-9a63-67f880944b57');
@@ -32,3 +32,5 @@ export default OneSignalInit = () => {
     console.log('OneSignal: notification opened:', notification);
   });
 };
+
+export default OneSignalInit;

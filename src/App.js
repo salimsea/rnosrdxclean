@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import OneSignal from 'react-native-onesignal';
 import SplashScreen from 'react-native-splash-screen';
 import {Provider} from 'react-redux';
-import {navigationRef, OneSignalInit, store} from './config';
+import {IgnoreLog, navigationRef, OneSignalInit, store} from './config';
 import {NavigationContainer} from '@react-navigation/native';
 import Routers from './routers';
 import CodePush from 'react-native-code-push';
