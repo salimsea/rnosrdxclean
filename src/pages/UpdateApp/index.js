@@ -84,7 +84,7 @@ const UpdateApp = () => {
         <View style={{width: '80%', height: 20, backgroundColor: 'white'}}>
           <ProgressBar progress={progressDownload.progressBar} color="blue" />
         </View>
-        <Text>{progressDownload.persentase || 0} %</Text>
+        <Text>{parseInt(progressDownload.persentase) || 0} %</Text>
       </View>
     </>
   );

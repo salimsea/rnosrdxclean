@@ -2,14 +2,11 @@ import {
   StyleSheet,
   Text,
   View,
-  Button,
   StatusBar,
   TouchableOpacity,
 } from 'react-native';
 import React, {useEffect} from 'react';
-import {colors, fonts} from '../../utils';
-import {ProgressBar, TouchableRipple} from 'react-native-paper';
-import {ILSplash} from '../../assets';
+import {colors, fonts, fontSize} from '../../utils';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import CodePush from 'react-native-code-push';
 import {Gap} from '../../components';
@@ -40,14 +37,35 @@ const Home = ({navigation}) => {
           alignItems: 'center',
           backgroundColor: colors.white,
         }}>
-        <Text style={{fontFamily: fonts.primary['custom'], fontSize: 30}}>
+        <Text
+          style={{fontFamily: fonts.primary[600], fontSize: fontSize.xlarge}}>
           HOME
         </Text>
-        <Gap height={15} />
-        <TouchableOpacity onPress={() => navigation.navigate('UpdateApp')}>
-          <Text style={{fontFamily: fonts.primary['300'], fontSize: 11}}>
-            Cek Pembaruan
+        <Text
+          style={{fontFamily: fonts.primary[300], fontSize: fontSize.xlarge}}>
+          BOILER TEMPLATE FOR REACT NATIVE
+        </Text>
+        <Text
+          style={{fontFamily: fonts.primary[300], fontSize: fontSize.small}}>
+          Run This{' '}
+          <Text
+            style={{fontFamily: fonts.primary[600], fontSize: fontSize.small}}>
+            "npx react-native-rename "yourApp" -b com.your.app"
           </Text>
+        </Text>
+        <Gap height={15} />
+        <TouchableOpacity
+          onPress={() => navigation.navigate('UpdateApp')}
+          style={{flexDirection: 'row', alignItems: 'center'}}>
+          <Text
+            style={{
+              fontFamily: fonts.primary['300'],
+              fontSize: fontSize.small,
+              paddingRight: 10,
+            }}>
+            Check Update
+          </Text>
+          <Icon name="update" size={20} color={colors.dark} />
         </TouchableOpacity>
       </View>
     </>

@@ -1,3 +1,6 @@
+import {RFValue} from 'react-native-responsive-fontsize';
+import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
+
 export const fonts = {
   primary: {
     200: 'Poppins-Thin',
@@ -8,7 +11,6 @@ export const fonts = {
     800: 'Poppins-ExtraBold',
     900: 'Poppins-Black',
     normal: 'Poppins-Regular',
-    custom: 'NasalizationRg-Regular',
   },
   secondary: {
     200: 'OpenSans-ExtraLight',
@@ -20,4 +22,12 @@ export const fonts = {
     900: 'OpenSans-Black',
     normal: 'OpenSans-Regular',
   },
+};
+
+export const fontSize = {
+  mini: RFValue(12, hp('100%')),
+  small: RFValue(14, hp('100%')),
+  medium: RFValue(17, hp('100%')),
+  large: RFValue(20, hp('100%')),
+  xlarge: RFValue(24, hp('100%')),
 };
