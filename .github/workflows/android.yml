@@ -20,8 +20,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm ci
-      - run: npmx jetifier
+      - name: Install dependencies
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+
+      - run: npx jetifier
       - run: ./gradlew assembleRelease
         working-directory: android
         name: Build Android apk (debug)
