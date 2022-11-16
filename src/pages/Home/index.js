@@ -13,14 +13,17 @@ import {Gap} from '../../components';
 
 const Home = ({navigation}) => {
   useEffect(() => {
-    CodePush.checkForUpdate().then(update => {
-      if (!update) {
-        console.log('The app is up to date!');
-      } else {
-        console.log('An update is available! Should we download it?');
-        navigation.replace('UpdateApp');
-      }
-    });
+    const checkUpdate = () => {
+      CodePush.checkForUpdate().then(update => {
+        if (!update) {
+          console.log('The app is up to date!');
+        } else {
+          console.log('An update is available! Should we download it?');
+          // navigation.replace('UpdateApp');
+        }
+      });
+    };
+    checkUpdate();
   }, []);
 
   return (

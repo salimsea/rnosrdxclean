@@ -23,10 +23,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Install ci
+      - name: Install dependencies
         run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
           npm ci
+          else
+          npm i
+          fi
 
       - name: Calc coverage
         run: |
-          npm run code-quality
+          yarn code-quality

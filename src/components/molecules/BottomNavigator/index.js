@@ -97,7 +97,6 @@ const styles = StyleSheet.create({
     height: hp('7%'),
     width: '100%',
     borderTopWidth: 0.3,
-    alignItems: 'center',
     marginVertical: Platform.select({ios: 4, android: 0}), // Prevent a random Android rendering issue
   },
 });
