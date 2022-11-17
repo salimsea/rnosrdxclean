@@ -4,6 +4,8 @@
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsalimsea%2Frnosrdxclean&count_bg=%2379C83D&title_bg=%234D4D4D&icon=react.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
+![example workflow](https://github.com/salimsea/rnosrdxclean/actions/workflows/codeQuality.yml/badge.svg) 
+
 ## Last Updated
 
 - Updated 21 Oct 2022
@@ -25,7 +27,7 @@ Boiler Template React Native, Onesignal, Redux, React Navigation
 
 ## Version
 
-- RN : 0.67
+- RN : 0.67.4
 - React Navigation : 6.0.8
 - OneSignal : 4.3.7
 
