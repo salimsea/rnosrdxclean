@@ -10,7 +10,7 @@ export const fonts = {
     700: 'Poppins-Bold',
     800: 'Poppins-ExtraBold',
     900: 'Poppins-Black',
-    normal: 'Poppins-Regular',
+    normal: 'Poppins-Medium',
   },
   secondary: {
     200: 'OpenSans-ExtraLight',

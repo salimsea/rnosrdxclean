@@ -8,6 +8,7 @@ const IgnoreLog = () => {
     '`new NativeEventEmitter()` was called with a non-null argument without the required `addListener` method.',
     '`new NativeEventEmitter()` was called with a non-null argument without the required `removeListeners` method.',
     'Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`',
+    'RCTBridge required dispatch_sync to load REAModule. This may lead to deadlocks',
   ]);
 };
 
