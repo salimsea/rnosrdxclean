@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">rnosrdxclean</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">K7czk5oXQezL0aIVebVvAyIBJzGBL2N281Wii</string>
 </resources>
