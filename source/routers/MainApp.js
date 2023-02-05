@@ -1,6 +1,6 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Home} from '../pages';
+import {Home, Intro, UpdateApp} from '../pages';
 import {BottomNavigator} from '../components';
 
 const TabBottom = createBottomTabNavigator();
@@ -10,8 +10,8 @@ export const MainApp = () => {
       tabBar={props => <BottomNavigator {...props} />}
       screenOptions={{headerShown: false}}>
       <TabBottom.Screen name="Home" component={Home} />
-      <TabBottom.Screen name="User" component={Home} />
-      <TabBottom.Screen name="Setting" component={Home} />
+      <TabBottom.Screen name="Intro" component={Intro} />
+      <TabBottom.Screen name="UpdateApp" component={UpdateApp} />
     </TabBottom.Navigator>
   );
 };
