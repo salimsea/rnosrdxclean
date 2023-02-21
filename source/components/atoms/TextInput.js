@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, StyleSheet} from 'react-native';
 import {TextInput as TextInputPaper} from 'react-native-paper';
 import {colors, fontFamilys, fontSizes} from '../../common';
 
@@ -28,13 +28,7 @@ const TextInput = ({
         }
         selectionColor={colors.secondary.info[500]}
         multiline={props.isTextArea ? true : false}
-        style={{
-          backgroundColor: colors.white,
-          borderRadius: 12,
-          minHeight: props.isTextArea ? 100 : 0,
-          textAlignVertical: props.isTextArea ? 'top' : 'center',
-          paddingLeft: 5,
-        }}
+        style={styles.textinput(props)}
         activeOutlineColor={
           !labelError ? colors.primary[500] : colors.secondary.danger['500']
         }
@@ -49,19 +43,25 @@ const TextInput = ({
         }}
         {...props}
       />
-      {labelError && (
-        <Text
-          style={{
-            fontSize: fontSizes.small,
-            fontFamily: fontFamilys.primary['400'],
-            color: colors.secondary.danger[500],
-            marginTop: 4,
-          }}>
-          {labelError}
-        </Text>
-      )}
+      {labelError && <Text style={styles.txtError}>{labelError}</Text>}
     </>
   );
 };
 
 export default TextInput;
+
+const styles = StyleSheet.create({
+  txtError: {
+    fontSize: fontSizes.small,
+    fontFamily: fontFamilys.primary['400'],
+    color: colors.secondary.danger[500],
+    marginTop: 4,
+  },
+  textinput: props => ({
+    backgroundColor: colors.white,
+    borderRadius: 12,
+    minHeight: props.isTextArea ? 100 : 0,
+    textAlignVertical: props.isTextArea ? 'top' : 'center',
+    paddingLeft: 5,
+  }),
+});

@@ -1,4 +1,4 @@
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {
   colors,
@@ -7,11 +7,6 @@ import {
   fontSizes,
   FUNCGenerateBoxShadowStyle,
 } from '../../common';
-import {RFValue} from 'react-native-responsive-fontsize';
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from 'react-native-responsive-screen';
 import {TouchableRipple} from 'react-native-paper';
 
 const Button = ({

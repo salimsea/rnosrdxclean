@@ -1,15 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import {View, StyleSheet, Keyboard, Platform, Animated} from 'react-native';
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from 'react-native-responsive-screen';
+import React, {useEffect} from 'react';
+import {StyleSheet, Platform, Animated} from 'react-native';
 import {colors} from '../../common';
 import {TabItem} from '../atoms';
 
 const BottomNavigator = props => {
-  const [offset, setOffset] = useState(new Animated.Value(0));
-
   useEffect(() => {
     let keyboardEventListeners;
 
@@ -24,7 +18,6 @@ const BottomNavigator = props => {
   }, []);
 
   const render = () => {
-    // if (Platform.OS === 'ios') return <BottomTabItem {...props} />;
     return (
       <Animated.View style={[styles.container]}>
         <BottomTabItem {...props} />

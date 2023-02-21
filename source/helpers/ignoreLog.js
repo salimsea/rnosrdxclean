@@ -1,5 +1,5 @@
 import {LogBox} from 'react-native';
-export default IgnoreLog = () => {
+const ignoreLog = () => {
   LogBox.ignoreLogs([
     'Remote debugger is in a background tab which may cause apps to perform slowly',
     'Require cycle: node_modules/rn-fetch-blob/index.js',
@@ -18,3 +18,5 @@ export default IgnoreLog = () => {
     'RCTBridge required dispatch_sync to load REAModule. This may lead to deadlocks',
   ]);
 };
+
+export default ignoreLog;

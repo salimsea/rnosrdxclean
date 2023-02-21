@@ -1,7 +1,7 @@
 import OneSignal from 'react-native-onesignal';
 import {KEY_ONESIGNAL} from '../common';
 
-export default OneSignalInit = () => {
+const OneSignalInit = () => {
   //OneSignal Init Code
   OneSignal.setLogLevel(6, 0);
   OneSignal.setAppId(KEY_ONESIGNAL);
@@ -9,7 +9,7 @@ export default OneSignalInit = () => {
 
   //Prompt for push on iOS
   OneSignal.promptForPushNotificationsWithUserResponse(response => {
-    console.log('Prompt response:', response);
+    // console.log('Prompt response:', response);
   });
 
   //Method for handling notifications received while app in foreground
@@ -20,7 +20,6 @@ export default OneSignalInit = () => {
         notificationReceivedEvent,
       );
       let notification = notificationReceivedEvent.getNotification();
-      const data = notification.additionalData;
       notificationReceivedEvent.complete(notification);
     },
   );
@@ -30,3 +29,5 @@ export default OneSignalInit = () => {
     console.log('OneSignal: notification opened:', notification);
   });
 };
+
+export default OneSignalInit;

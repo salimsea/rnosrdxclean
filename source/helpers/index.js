@@ -1,8 +1,8 @@
 import http from './http';
 import OneSignalInit from './onesignal';
 import {storage} from './storage';
-import IgnoreLog from './ignoreLog';
+import ignoreLog from './ignoreLog';
 import {getStatusBarHeight} from './statusBarHeight';
 
 export * from './navigationRef';
-export {http, OneSignalInit, storage, IgnoreLog, getStatusBarHeight};
+export {http, OneSignalInit, storage, ignoreLog, getStatusBarHeight};

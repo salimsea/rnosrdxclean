@@ -9,7 +9,8 @@ const Gap = ({height, width, color, marginVertical = 0}) => {
         width: width,
         backgroundColor: color,
         marginVertical: marginVertical,
-      }}></View>
+      }}
+    />
   );
 };
 

@@ -1,4 +1,3 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React, {useEffect} from 'react';
 import {navigationRef, OneSignalInit} from './helpers';
 import OneSignal from 'react-native-onesignal';
@@ -51,5 +50,3 @@ const App = () => {
 };
 
 export default App;
-
-const styles = StyleSheet.create({});
