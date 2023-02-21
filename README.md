@@ -10,13 +10,13 @@
 |---|---|
 
 ## Last Updated
-
+- Updated 21 Feb 2023
+  - remove react-native-vector-icon ❌
+  - restructure foldering 📁
 - Updated 21 Oct 2022
-  -- add react-native-code-push (easy update app in production 🔥)
-- Updated 12 Sep 2022
-  -- add react-native-vector-icons
+  - add react-native-code-push (easy update app in production 🔥)
 - Updated 29 Aug 2022
-  -- Changed API Level 31 (support upload google playstore )
+  - Changed API Level 31 (support upload google playstore )
 
 ## What is this
 
