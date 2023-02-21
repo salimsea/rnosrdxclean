@@ -27,7 +27,7 @@
     "react-native": "0.67.4",
     "react-native-bluetooth-escpos-printer": "^0.0.5",
     "react-native-code-push": "^7.0.5",
-    "react-native-gesture-handler": "^2.3.2",
+    "react-native-gesture-handler": "^2.9.0",
     "react-native-mmkv": "2.5.1",
     "react-native-modalize": "^2.1.1",
     "react-native-onesignal": "^4.3.7",
