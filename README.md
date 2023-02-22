@@ -2,21 +2,18 @@
 
 ![image](https://user-images.githubusercontent.com/49223890/160132104-d0de5217-40a8-406d-b9a9-cd1232224f71.png)
 
-
-
-
-
-|  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsalimsea%2Frnosrdxclean&count_bg=%2379C83D&title_bg=%234D4D4D&icon=react.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)  | ![example workflow](https://github.com/salimsea/rnosrdxclean/actions/workflows/codeQuality.yml/badge.svg) |
-|---|---|
+| [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsalimsea%2Frnosrdxclean&count_bg=%2379C83D&title_bg=%234D4D4D&icon=react.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) | ![example workflow](https://github.com/salimsea/rnosrdxclean/actions/workflows/codeQuality.yml/badge.svg) |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 
 ## Last Updated
+
+- Updated 22 Feb 2023
+  - Change API Level 33 (support upload google playstore )
 - Updated 21 Feb 2023
   - remove react-native-vector-icon ❌
   - restructure foldering 📁
 - Updated 21 Oct 2022
   - add react-native-code-push (easy update app in production 🔥)
-- Updated 29 Aug 2022
-  - Changed API Level 31 (support upload google playstore )
 
 ## What is this
 
